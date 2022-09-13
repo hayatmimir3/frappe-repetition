@@ -1,0 +1,99 @@
+{
+ "actions": [],
+ "allow_rename": 1,
+ "autoname": "format:R-{#####}",
+ "creation": "2022-08-22 02:01:25.449997",
+ "doctype": "DocType",
+ "editable_grid": 1,
+ "engine": "InnoDB",
+ "field_order": [
+  "repeated_doctype",
+  "doc_name",
+  "start_repetition_date",
+  "end_repetition_date",
+  "period_unit",
+  "repetition_period",
+  "date_field",
+  "next_schedule_date"
+ ],
+ "fields": [
+  {
+   "fieldname": "repeated_doctype",
+   "fieldtype": "Link",
+   "in_list_view": 1,
+   "label": "Repeated Doc",
+   "options": "DocType",
+   "reqd": 1
+  },
+  {
+   "fieldname": "doc_name",
+   "fieldtype": "Dynamic Link",
+   "in_list_view": 1,
+   "label": "Doc Name",
+   "options": "repeated_doctype",
+   "reqd": 1
+  },
+  {
+   "fieldname": "start_repetition_date",
+   "fieldtype": "Date",
+   "in_list_view": 1,
+   "label": "Start date"
+  },
+  {
+   "fieldname": "end_repetition_date",
+   "fieldtype": "Date",
+   "label": "End date"
+  },
+  {
+   "fieldname": "period_unit",
+   "fieldtype": "Select",
+   "label": "Period",
+   "options": "Daily\nWeekly\nMonthly\nQuarterly\nYearly"
+  },
+  {
+   "fieldname": "repetition_period",
+   "fieldtype": "Int",
+   "label": "Repetition Period",
+   "read_only": 1
+  },
+  {
+   "fieldname": "date_field",
+   "fieldtype": "Select",
+   "label": "Date",
+   "options": "start date\nposting date"
+  },
+  {
+   "fieldname": "next_schedule_date",
+   "fieldtype": "Date",
+   "hidden": 1,
+   "label": "Next schedule date",
+   "print_hide": 1
+  }
+ ],
+ "index_web_pages_for_search": 1,
+ "links": [],
+ "modified": "2022-09-11 11:12:53.942325",
+ "modified_by": "Administrator",
+ "module": "Automation",
+ "name": "Repetition",
+ "naming_rule": "Expression",
+ "owner": "Administrator",
+ "permissions": [
+  {
+   "create": 1,
+   "delete": 1,
+   "email": 1,
+   "export": 1,
+   "print": 1,
+   "read": 1,
+   "report": 1,
+   "role": "System Manager",
+   "share": 1,
+   "write": 1
+  }
+ ],
+ "sort_field": "modified",
+ "sort_order": "DESC",
+ "states": [],
+ "track_changes": 1
+}
