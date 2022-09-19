@@ -1,5 +1,5 @@
-# Copyright (c) 2022, Frappe Technologies and contributors
-# For license information, please see license.txt
+# Copyright (c) 2022, Frappe Technologies and contributors #
+# For license information, please see license.txt #
 from datetime import datetime, timedelta, date
 from dateutil.relativedelta import relativedelta
 
